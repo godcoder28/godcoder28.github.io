@@ -1,0 +1,82 @@
+article, div, aside, figure, footer, header, main, nav, section {
+    display: block;
+}
+body {
+    margin: 0 0;
+}
+a:visited, a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    width: 100%;
+    background-color: black;
+    padding: 0.75rem 0;
+}
+
+.navigation-box {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    color: cornsilk;
+    list-style: none;
+}
+
+.nav-list-item > a:visited, .nav-list-item > a{
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.lable {
+    float: left;
+}
+.widgit-box {
+    float: right;
+    height: 250px;
+    width: 600px;
+    border: 1px solid black;
+}
+
+.main-logo {
+    font-size: 5rem;
+    font-family: fantasy;
+}
+
+.logo-header::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.body-box, .logo-header {
+    width: 75%;
+    margin: 2rem auto;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-box {
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+.main-heading {
+    margin: 0 0;
+}
+
+.article-content{
+    margin: 3rem 0;
+}
+
+.aside-box {
+    width: 30%;
+}
