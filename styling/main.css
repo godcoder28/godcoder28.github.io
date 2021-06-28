@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
 }
 
 body, div, article, span, h1, h2, h3, ul, ol, p {
@@ -101,12 +102,20 @@ nav {
 
 .content-list-box {
     margin: 1rem 0;
-    padding: 1rem 2rem;
-    border-top: 0.4rem solid orange;
-    border-bottom: 0.1rem solid orange;
-    border-left: 0.1rem solid orange;
-    border-right: 0.1rem solid orange;
+    padding: 1rem 3rem;
+    border-top: 0.3rem solid #469bd1;
+    border-bottom: 0.1rem solid #469bd1;
+    border-left: 0.1rem solid #469bd1;
+    border-right: 0.1rem solid #469bd1;
     border-radius: 10px;
+}
+
+.content-list-box > ul > li {
+    padding: 0.2rem 0;
+}
+
+.content-list-box > ul > li > a {
+    color: #469bd1;
 }
 
 /* Aside Box */
@@ -124,6 +133,10 @@ nav {
     border-bottom: 0.1rem solid black;
 }
 
+.aside-list > ul > li > a {
+    font-weight: bolder;
+}
+
 .aside-widgit {
     width: 100%;
     margin: 2rem 0 1rem;
@@ -133,12 +146,37 @@ nav {
 
 .footer-main {
     width: 100%;
-    margin: 0 auto 1rem;
+    margin: 4rem auto 0;
+    padding: 1rem 0;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.footer-row {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-row > div > ul {
+    list-style: none;
+}
+
+.footer-row > div > ul > li > a:visited,
+.footer-row > div > ul > li > a {
+    color: white;
+}
+
+.footer-row > div > h3 {
+    color: rgb(243, 195, 123);
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: x-large;
 }
 
 .footer-column {
-    display: flex;
-    justify-content: space-evenly;
+    margin: 0 1rem;
 }
 
 .top {
