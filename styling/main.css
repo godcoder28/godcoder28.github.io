@@ -1,6 +1,8 @@
 html {
     scroll-behavior: smooth;
     font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.625;
 }
 
 body, div, article, span, h1, h2, h3, ul, ol, p {
@@ -23,6 +25,11 @@ a:visited, a {
     height: 200px;
     width: 200px;
     border: 1px solid black;
+}
+
+.pdf-view {
+    width: 100%;
+    height: 80vh;
 }
 
 /* Navigation Bar*/
@@ -88,7 +95,6 @@ nav {
 
 .main-box {
     width: 75%;
-    font-size: 1rem;
 }
 
 .main-heading {
@@ -102,12 +108,26 @@ nav {
 
 .content-list-box {
     margin: 1rem 0;
-    padding: 1rem 3rem;
+    padding: 0 2rem;
     border-top: 0.3rem solid #469bd1;
     border-bottom: 0.1rem solid #469bd1;
     border-left: 0.1rem solid #469bd1;
     border-right: 0.1rem solid #469bd1;
     border-radius: 10px;
+    min-height: 80vh;
+}
+
+.content-list-box > h2 {
+    margin: 0.5rem 0;
+}
+
+.content-list-box > p {
+    margin: 1rem 0;
+}
+
+.content-list-box > ul {
+    margin: 1rem 3rem;
+    line-height: 1.2;
 }
 
 .content-list-box > ul > li {
