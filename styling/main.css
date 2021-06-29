@@ -146,11 +146,16 @@ nav {
     color: #469bd1;
 }
 
+.content-list-box > ul > li > a:hover {
+    text-decoration: underline;
+}
+
 /* Aside Box */
 
 .aside-box {
     width: 25%;
     height: fit-content;
+    font-size: 1rem;
 }
 
 .aside-list > ul {
