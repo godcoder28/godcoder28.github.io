@@ -1,8 +1,13 @@
 html {
     scroll-behavior: smooth;
     font-family: "Roboto", sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.625;
+    background-color: #f0f0f0;
+}
+
+p, li {
+    font-family: domine, serif;
 }
 
 body, div, article, span, h1, h2, h3, ul, ol, p {
@@ -94,7 +99,10 @@ nav {
 }
 
 .main-box {
-    width: 75%;
+    padding: 2rem;
+    width: 65%;
+    background-color: white;
+    border-radius: 1rem;
 }
 
 .main-heading {
@@ -141,7 +149,8 @@ nav {
 /* Aside Box */
 
 .aside-box {
-    width: 20%;
+    width: 25%;
+    height: fit-content;
 }
 
 .aside-list > ul {
@@ -191,7 +200,6 @@ nav {
     color: rgb(243, 195, 123);
     margin-bottom: 2rem;
     text-decoration: underline;
-    font-style: italic;
     font-size: x-large;
 }
 
