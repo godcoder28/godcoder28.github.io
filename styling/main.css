@@ -24,6 +24,15 @@ a:visited, a {
     color: black;
 }
 
+strong {
+    font-size: 1.3em;
+    padding: 0 0.3rem 0 0;
+}
+
+p {
+    margin: 2rem 0;
+}
+
 /* General Elements*/
 
 .widgit {
@@ -110,6 +119,12 @@ nav {
     font-size: 2.5rem;
 }
 
+.page-heading {
+    margin: 0 0;
+    font-size: 2rem;
+}
+
+
 .article-content{
     margin: 3rem 0;
 }
@@ -126,20 +141,24 @@ nav {
 }
 
 .content-list-box > h2 {
-    margin: 0.5rem 0;
-}
-
-.content-list-box > p {
     margin: 1rem 0;
 }
 
+.index-p {
+    margin: 1rem 0 !important;
+}
+
+.chapter-list-p {
+    margin: 3rem 0 !important;
+}
+
 .content-list-box > ul {
-    margin: 1rem 3rem;
+    margin: 1rem 2rem 3rem;
     line-height: 1.2;
 }
 
 .content-list-box > ul > li {
-    padding: 0.2rem 0;
+    padding: 0.5rem 0;
 }
 
 .content-list-box > ul > li > a {
@@ -148,6 +167,15 @@ nav {
 
 .content-list-box > ul > li > a:hover {
     text-decoration: underline;
+}
+
+.index-list {
+    margin: 1rem 3rem !important;
+}
+
+.answer {
+    margin: 0 -1rem;
+    width: 100%;
 }
 
 /* Aside Box */
@@ -174,6 +202,10 @@ nav {
 .aside-widgit {
     width: 100%;
     margin: 2rem 0 1rem;
+}
+
+.question {
+    margin: 0.5rem;
 }
 
 /* Footer */
