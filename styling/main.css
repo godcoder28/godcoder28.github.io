@@ -175,7 +175,7 @@ nav {
 
 .answer {
     margin: 0 -1rem;
-    width: 100%;
+    max-width: 100%;
 }
 
 .exercise-list {
