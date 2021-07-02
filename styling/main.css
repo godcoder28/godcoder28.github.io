@@ -6,7 +6,7 @@ html {
     background-color: #f0f0f0;
 }
 
-p, li {
+p, li, span {
     font-family: domine, serif;
 }
 
@@ -16,7 +16,7 @@ body, div, article, span, h1, h2, h3, ul, ol, p {
     border: 0;
 }
 
-article, div, aside, figure, footer, header, main, nav, section {
+article, div, aside, figure, footer, header, main, nav, section, img {
     display: block;
 }
 a:visited, a {
@@ -27,10 +27,6 @@ a:visited, a {
 strong {
     font-size: 1.3em;
     padding: 0 0.3rem 0 0;
-}
-
-p {
-    margin: 2rem 0;
 }
 
 /* General Elements*/
@@ -71,6 +67,10 @@ nav {
 .nav-list-item > a:visited, .nav-list-item > a{
     color: cornsilk;
     text-decoration: none;
+}
+
+.nav-list-item > a:hover {
+    text-decoration: underline;
 }
 
 /* Main Header */
@@ -137,7 +137,6 @@ nav {
     border-left: 0.1rem solid #469bd1;
     border-right: 0.1rem solid #469bd1;
     border-radius: 10px;
-    min-height: 80vh;
 }
 
 .content-list-box > h2 {
@@ -145,19 +144,23 @@ nav {
 }
 
 .index-p {
-    margin: 1rem 0 !important;
+    margin: 1rem 0;
+}
+
+.index-list, .subtopic-ul {
+    margin: 1rem 3rem;
 }
 
 .chapter-list-p {
-    margin: 3rem 0 !important;
+    margin: 3rem 0;
 }
 
-.content-list-box > ul {
-    margin: 1rem 2rem 3rem;
+.chapter-list-ul {
+    margin: 1rem 1rem 3rem;
     line-height: 1.2;
 }
 
-.content-list-box > ul > li {
+.chapter-list-ul > li, .index-list > li, .subtopic-ul > li {
     padding: 0.5rem 0;
 }
 
@@ -169,8 +172,17 @@ nav {
     text-decoration: underline;
 }
 
-.index-list {
-    margin: 1rem 3rem !important;
+.exercise-list {
+    list-style: square;
+    margin: 1rem;
+}
+
+.exercise-list > li {
+    padding: 0;
+}
+
+.solution-page-p {
+    margin: 2rem 0;
 }
 
 .answer {
@@ -178,12 +190,11 @@ nav {
     width: 100%;
 }
 
-.exercise-list {
-    list-style: square;
-}
-
-.exercise-list > li {
-    padding: 0 0 !important;
+.solution-heading {
+    font-weight: 1000;
+    color: #006000;
+    display: block;
+    font-size: 1.1rem;
 }
 
 /* Aside Box */
@@ -256,16 +267,4 @@ nav {
     width: 2rem;
     display: block;
     margin: 1rem auto 0;
-}
-
-.ray-optics > img {
-    width: auto;
-    display: block;
-    margin: auto;
-    padding: 1rem 0;
-}
-
-.ray-optics {
-    font-family: sans-serif;
-    font-size: 1.1rem;
 }
