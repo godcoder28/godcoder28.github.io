@@ -21,7 +21,11 @@ article, div, aside, figure, footer, header, main, nav, section, img {
 }
 a:visited, a {
     text-decoration: none;
-    color: black;
+    color: #469bd1;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 strong {
@@ -69,14 +73,14 @@ nav {
     text-decoration: none;
 }
 
-.nav-list-item > a:hover {
-    text-decoration: underline;
-}
-
 /* Main Header */
 
 .lable {
     float: left;
+}
+
+a[href="/index.html"] {
+    color: black;
 }
 
 .main-logo {
@@ -156,20 +160,12 @@ nav {
 }
 
 .chapter-list-ul {
-    margin: 1rem 1rem 3rem;
+    margin: 1rem 0rem 3rem 2rem;
     line-height: 1.2;
 }
 
-.chapter-list-ul > li, .index-list > li, .subtopic-ul > li {
+.chapter-list-ul > li, .index-list > li, .subtopic-ul > li , .ncert-book-list > li {
     padding: 0.5rem 0;
-}
-
-.content-list-box > ul > li > a {
-    color: #469bd1;
-}
-
-.content-list-box > ul > li > a:hover {
-    text-decoration: underline;
 }
 
 .exercise-list {
@@ -181,6 +177,10 @@ nav {
     padding: 0;
 }
 
+.ncert-book-list {
+    margin: 2rem 3rem 4rem;
+}
+
 .solution-page-p {
     margin: 2rem 0;
 }
@@ -190,11 +190,26 @@ nav {
     width: 100%;
 }
 
+.answer-image {
+    max-width: 100%;
+}
+
+.question-heading {
+    margin-top: 4rem;
+    font-weight: 700;
+    color: #eb4924;
+    display: block;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
 .solution-heading {
-    font-weight: 1000;
+    margin-top: 0.75rem;
+    font-weight: 700;
     color: #006000;
     display: block;
     font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Aside Box */
@@ -215,6 +230,7 @@ nav {
 }
 
 .aside-list > ul > li > a {
+    color: black;
     font-weight: bolder;
 }
 
